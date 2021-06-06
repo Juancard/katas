@@ -35,6 +35,6 @@ class TestFizzBuzzPrinterClassist(TestCase):
     def test_given_10_to_15_returns_numbers_fizz_buzz_and_fizzbuzz(self):
         string = self.fizzBuzzPrinter.get_string(10, 15)
         expected_string = "{}{}{}{}{}{}{}{}{}{}{}".format(self.buzz, self.separator, 11, self.separator,
-                                                          self.fizz, self.separator, 13, self.separator,
+                                                          self.fizz, self.separator, self.fizz, self.separator,
                                                           14, self.separator, self.fizz_buzz)
         self.assertEqual(string, expected_string)

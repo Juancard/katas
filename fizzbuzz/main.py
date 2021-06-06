@@ -16,22 +16,22 @@ class FizzBuzz:
             out += self.__fizz
         if self.__es_buzz(numero):
             out += self.__buzz
-        return out or numero
+        return out or str(numero)
 
     def __es_fizz(self, numero: int):
         return self.__es_multiplo_de(
-            numero, 3) or self.__contiene_un(str(numero), "3")
+            numero, 3) or self.__contiene_un(numero, "3")
 
     def __es_buzz(self, numero: int):
-        return self.__es_multiplo_de(numero, 5) or self.__contiene_un(string(numero), "5")
+        return self.__es_multiplo_de(numero, 5) or self.__contiene_un(numero, "5")
 
     def __es_multiplo_de(self, numero: int, n: int):
         if numero == 0:
             return 0
         return numero % n == 0
 
-    def __contiene_un(self, numero: str, n: str):
-        return n in numero
+    def __contiene_un(self, numero: int, n: str):
+        return n in str(numero)
 
 
 class FizzBuzzPrinter:

@@ -21,37 +21,37 @@ class TestFizzBuzz(TestCase):
         self.fizzBuzz = FizzBuzz()
 
     def test_given_1_return_1(self):
-        string = self.fizzBuzz.get_string_for("1")
+        string = self.fizzBuzz.get_string_for(1)
         self.assertEqual(string, "1")
 
     def test_given_2_return_2(self):
-        string = self.fizzBuzz.get_string_for("2")
+        string = self.fizzBuzz.get_string_for(2)
         self.assertEqual(string, "2")
 
     def test_given_3_return_fizz(self):
-        string = self.fizzBuzz.get_string_for("3")
+        string = self.fizzBuzz.get_string_for(3)
         self.assertEqual(string, self.fizz)
 
     def test_given_5_return_fizz(self):
-        string = self.fizzBuzz.get_string_for("5")
+        string = self.fizzBuzz.get_string_for(5)
         self.assertEqual(string, self.buzz)
 
     def test_given_6_return_fizz(self):
-        string = self.fizzBuzz.get_string_for("6")
+        string = self.fizzBuzz.get_string_for(6)
         self.assertEqual(string, self.fizz)
 
     def test_given_10_return_buzz(self):
-        string = self.fizzBuzz.get_string_for("10")
+        string = self.fizzBuzz.get_string_for(10)
         self.assertEqual(string, self.buzz)
 
     def test_given_15_return_fizzbuzz(self):
-        string = self.fizzBuzz.get_string_for("15")
+        string = self.fizzBuzz.get_string_for(15)
         self.assertEqual(string, self.fizz_buzz)
 
     def test_given_13_return_fizz(self):
-        string = self.fizzBuzz.get_string_for("13")
+        string = self.fizzBuzz.get_string_for(13)
         self.assertEqual(string, self.fizz)
 
     def test_given_52_return_buzz(self):
-        string = self.fizzBuzz.get_string_for("52")
+        string = self.fizzBuzz.get_string_for(52)
         self.assertEqual(string, self.buzz)
